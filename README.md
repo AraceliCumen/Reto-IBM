@@ -1,33 +1,22 @@
-# What is this?
-This is a simple REST API using Javascript Technologies and PostgreSQL.
+# Reto IBM?
+REST API usando Javascript y PostgreSQL.
 - nodejs
 - express
 - postgreSQL
 - sequelize
 - babel 
 
-# Project Structure
-```
-    .
-    ├── package.json
-    ├── package-lock.json
-    ├── README.md
-    ├── sql
-    │   └── db.sql
-    └── src
-        ├── app.js
-        ├── controllers
-        │   ├── project.controller.js
-        │   └── task.controller.js
-        ├── database
-        │   └── database.js
-        ├── index.js
-        ├── models
-        │   ├── Project.js
-        │   └── Task.js
-        └── routes
-            ├── projects.js
-            └── tasks.js
+# Levantar Proyecto
+- Abrir con un editor de codigo (ejemplo: vsCode)
+- Ejecutar:
 
-    6 directories, 13 files
-```
+´´´
+npm install
+
+´´´
+
+- Luego :
+
+´´´
+npm run dev
+´´´
