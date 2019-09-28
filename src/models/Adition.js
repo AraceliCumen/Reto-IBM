@@ -7,10 +7,10 @@ const Adition = sequelize.define('adition', {
         type: Sequelize.INTEGER,
         primaryKey: true
     },
-    numberOne: {
+    numberone: {
         type: Sequelize.INTEGER
     },
-    numberTwo: {
+    numbertwo: {
         type: Sequelize.INTEGER
     },
     result: {

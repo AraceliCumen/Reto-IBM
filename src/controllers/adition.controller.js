@@ -1,26 +1,20 @@
 import Adition from '../models/Adition';
 
 export async function saveAdition(req, res) {
-    console.log('req:' + req.params);
 
     try {
-        const numberOne = parseInt(req.params.numberOne);
-        const numberTwo = parseInt(req.params.numberTwo);
-        const result = numberOne + numberTwo;
+        let numberone = parseInt(req.params.numberOne);
+        let numbertwo = parseInt(req.params.numberTwo);
+        let result = numberone + numbertwo;
+        
         const newAdition = await Adition.create({
-            numberOne,
-            numberTwo,
+            numberone,
+            numbertwo,
             result
         }, {
                 fields: ['numberone', 'numbertwo', 'result']
-        });
-        console.log('b1: ' + newAdition.numberOne);
-        if (newAdition) {
-            return res.json({
-                message: 'New Adition created',
-                data: newAdition
-            })
-        }
+            });
+        res.json({ message: 'New Task created' });
     } catch (error) {
         console.log(error);
         res.status(500).json({
